@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB30A916204E55020097D524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30A915204E55020097D524 /* AppDelegate.swift */; };
+		EB30A918204E55020097D524 /* SermonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30A917204E55020097D524 /* SermonsViewController.swift */; };
+		EB30A91B204E55020097D524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB30A919204E55020097D524 /* Main.storyboard */; };
+		EB30A91E204E55020097D524 /* ChurchApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB30A91C204E55020097D524 /* ChurchApp.xcdatamodeld */; };
+		EB30A920204E55020097D524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB30A91F204E55020097D524 /* Assets.xcassets */; };
+		EB30A923204E55020097D524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB30A921204E55020097D524 /* LaunchScreen.storyboard */; };
+		EB30A92B204E68100097D524 /* Sermon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30A92A204E68100097D524 /* Sermon.swift */; };
+		EB30A931204EA4AA0097D524 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30A930204EA4AA0097D524 /* EventsViewController.swift */; };
+		EB30A936204EADC70097D524 /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30A934204EADC70097D524 /* DayCollectionViewCell.swift */; };
+		EB7F44C5205250FF000C5480 /* CurchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F44C4205250FF000C5480 /* CurchTableViewCell.swift */; };
+		EB894A8420510BBD00DCD474 /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB894A8320510BBD00DCD474 /* MembersViewController.swift */; };
+		EB894A8620510CAE00DCD474 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB894A8520510CAE00DCD474 /* Member.swift */; };
+		EB894A8920510E1D00DCD474 /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB894A8820510E1D00DCD474 /* MemberDetailViewController.swift */; };
+		EB894A8B20511E6500DCD474 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB894A8A20511E6500DCD474 /* Constants.swift */; };
+		EB894A8F20514D2600DCD474 /* ChurchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB894A8E20514D2600DCD474 /* ChurchViewController.swift */; };
+		EBDF3A7C204FA856002C0302 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3A7B204FA856002C0302 /* DayViewController.swift */; };
+		EBDF3A7E204FB0D0002C0302 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3A7D204FB0D0002C0302 /* HeaderCollectionReusableView.swift */; };
+		EBDF3A80204FFB18002C0302 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3A7F204FFB18002C0302 /* Event.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB30A912204E55020097D524 /* ChurchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChurchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB30A915204E55020097D524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB30A917204E55020097D524 /* SermonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SermonsViewController.swift; sourceTree = "<group>"; };
+		EB30A91A204E55020097D524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB30A91D204E55020097D524 /* ChurchApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChurchApp.xcdatamodel; sourceTree = "<group>"; };
+		EB30A91F204E55020097D524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB30A922204E55020097D524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB30A924204E55020097D524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB30A92A204E68100097D524 /* Sermon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sermon.swift; sourceTree = "<group>"; };
+		EB30A930204EA4AA0097D524 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		EB30A934204EADC70097D524 /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB7F44C4205250FF000C5480 /* CurchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurchTableViewCell.swift; sourceTree = "<group>"; };
+		EB894A8320510BBD00DCD474 /* MembersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
+		EB894A8520510CAE00DCD474 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		EB894A8820510E1D00DCD474 /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
+		EB894A8A20511E6500DCD474 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EB894A8E20514D2600DCD474 /* ChurchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchViewController.swift; sourceTree = "<group>"; };
+		EBDF3A7B204FA856002C0302 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		EBDF3A7D204FB0D0002C0302 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		EBDF3A7F204FFB18002C0302 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB30A90F204E55020097D524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB30A909204E55020097D524 = {
+			isa = PBXGroup;
+			children = (
+				EB30A914204E55020097D524 /* ChurchApp */,
+				EB30A913204E55020097D524 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB30A913204E55020097D524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB30A912204E55020097D524 /* ChurchApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB30A914204E55020097D524 /* ChurchApp */ = {
+			isa = PBXGroup;
+			children = (
+				EB30A915204E55020097D524 /* AppDelegate.swift */,
+				EB894A8A20511E6500DCD474 /* Constants.swift */,
+				EB7F44C6205297E3000C5480 /* Church */,
+				EB30A938204EADD40097D524 /* Sermon */,
+				EB30A939204EADED0097D524 /* Events */,
+				EB894A8720510D4900DCD474 /* Members */,
+				EB30A919204E55020097D524 /* Main.storyboard */,
+				EB30A91F204E55020097D524 /* Assets.xcassets */,
+				EB30A921204E55020097D524 /* LaunchScreen.storyboard */,
+				EB30A924204E55020097D524 /* Info.plist */,
+				EB30A91C204E55020097D524 /* ChurchApp.xcdatamodeld */,
+			);
+			path = ChurchApp;
+			sourceTree = "<group>";
+		};
+		EB30A938204EADD40097D524 /* Sermon */ = {
+			isa = PBXGroup;
+			children = (
+				EB30A92A204E68100097D524 /* Sermon.swift */,
+				EB30A917204E55020097D524 /* SermonsViewController.swift */,
+			);
+			path = Sermon;
+			sourceTree = "<group>";
+		};
+		EB30A939204EADED0097D524 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF3A7F204FFB18002C0302 /* Event.swift */,
+				EB30A934204EADC70097D524 /* DayCollectionViewCell.swift */,
+				EBDF3A7D204FB0D0002C0302 /* HeaderCollectionReusableView.swift */,
+				EB30A930204EA4AA0097D524 /* EventsViewController.swift */,
+				EBDF3A7B204FA856002C0302 /* DayViewController.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		EB7F44C6205297E3000C5480 /* Church */ = {
+			isa = PBXGroup;
+			children = (
+				EB894A8E20514D2600DCD474 /* ChurchViewController.swift */,
+				EB7F44C4205250FF000C5480 /* CurchTableViewCell.swift */,
+			);
+			path = Church;
+			sourceTree = "<group>";
+		};
+		EB894A8720510D4900DCD474 /* Members */ = {
+			isa = PBXGroup;
+			children = (
+				EB894A8320510BBD00DCD474 /* MembersViewController.swift */,
+				EB894A8820510E1D00DCD474 /* MemberDetailViewController.swift */,
+				EB894A8520510CAE00DCD474 /* Member.swift */,
+			);
+			path = Members;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB30A911204E55020097D524 /* ChurchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB30A927204E55020097D524 /* Build configuration list for PBXNativeTarget "ChurchApp" */;
+			buildPhases = (
+				EB30A90E204E55020097D524 /* Sources */,
+				EB30A90F204E55020097D524 /* Frameworks */,
+				EB30A910204E55020097D524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChurchApp;
+			productName = ChurchApp;
+			productReference = EB30A912204E55020097D524 /* ChurchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB30A90A204E55020097D524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jake Schantz";
+				TargetAttributes = {
+					EB30A911204E55020097D524 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EB30A90D204E55020097D524 /* Build configuration list for PBXProject "ChurchApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB30A909204E55020097D524;
+			productRefGroup = EB30A913204E55020097D524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB30A911204E55020097D524 /* ChurchApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB30A910204E55020097D524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30A923204E55020097D524 /* LaunchScreen.storyboard in Resources */,
+				EB30A920204E55020097D524 /* Assets.xcassets in Resources */,
+				EB30A91B204E55020097D524 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB30A90E204E55020097D524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30A92B204E68100097D524 /* Sermon.swift in Sources */,
+				EB894A8F20514D2600DCD474 /* ChurchViewController.swift in Sources */,
+				EB7F44C5205250FF000C5480 /* CurchTableViewCell.swift in Sources */,
+				EBDF3A7E204FB0D0002C0302 /* HeaderCollectionReusableView.swift in Sources */,
+				EB894A8420510BBD00DCD474 /* MembersViewController.swift in Sources */,
+				EB30A91E204E55020097D524 /* ChurchApp.xcdatamodeld in Sources */,
+				EBDF3A80204FFB18002C0302 /* Event.swift in Sources */,
+				EB30A918204E55020097D524 /* SermonsViewController.swift in Sources */,
+				EB894A8620510CAE00DCD474 /* Member.swift in Sources */,
+				EB30A936204EADC70097D524 /* DayCollectionViewCell.swift in Sources */,
+				EB30A916204E55020097D524 /* AppDelegate.swift in Sources */,
+				EB30A931204EA4AA0097D524 /* EventsViewController.swift in Sources */,
+				EB894A8B20511E6500DCD474 /* Constants.swift in Sources */,
+				EBDF3A7C204FA856002C0302 /* DayViewController.swift in Sources */,
+				EB894A8920510E1D00DCD474 /* MemberDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB30A919204E55020097D524 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB30A91A204E55020097D524 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB30A921204E55020097D524 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB30A922204E55020097D524 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB30A925204E55020097D524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB30A926204E55020097D524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB30A928204E55020097D524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA42BWCR24;
+				INFOPLIST_FILE = ChurchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Schantz.ChurchApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB30A929204E55020097D524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA42BWCR24;
+				INFOPLIST_FILE = ChurchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Schantz.ChurchApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB30A90D204E55020097D524 /* Build configuration list for PBXProject "ChurchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB30A925204E55020097D524 /* Debug */,
+				EB30A926204E55020097D524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB30A927204E55020097D524 /* Build configuration list for PBXNativeTarget "ChurchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB30A928204E55020097D524 /* Debug */,
+				EB30A929204E55020097D524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB30A91C204E55020097D524 /* ChurchApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB30A91D204E55020097D524 /* ChurchApp.xcdatamodel */,
+			);
+			currentVersion = EB30A91D204E55020097D524 /* ChurchApp.xcdatamodel */;
+			path = ChurchApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB30A90A204E55020097D524 /* Project object */;
+}

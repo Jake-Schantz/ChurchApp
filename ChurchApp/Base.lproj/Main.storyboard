@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i6u-kM-936">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Members-->
+        <scene sceneID="s9f-ay-d3N">
+            <objects>
+                <viewController storyboardIdentifier="MembersViewController" title="Members" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1bf-tw-zRT" customClass="MembersViewController" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7U4-1i-UYf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Niy-ce-Ohj">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memberCell" textLabel="mgt-ba-qnA" rowHeight="59" style="IBUITableViewCellStyleDefault" id="NGw-TS-9yV">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="59"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NGw-TS-9yV" id="uCI-Y0-O4T">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="58.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mgt-ba-qnA">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="58.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7y6-GW-uO9" firstAttribute="trailing" secondItem="Niy-ce-Ohj" secondAttribute="trailing" id="LTf-MI-cB2"/>
+                            <constraint firstItem="7y6-GW-uO9" firstAttribute="bottom" secondItem="Niy-ce-Ohj" secondAttribute="bottom" id="Njb-ZN-Cdn"/>
+                            <constraint firstItem="Niy-ce-Ohj" firstAttribute="leading" secondItem="7y6-GW-uO9" secondAttribute="leading" id="aJH-uE-sq1"/>
+                            <constraint firstItem="Niy-ce-Ohj" firstAttribute="top" secondItem="7y6-GW-uO9" secondAttribute="top" id="qrQ-6Z-bQA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7y6-GW-uO9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Members" id="kK7-Sk-FSM"/>
+                    <connections>
+                        <outlet property="tableView" destination="Niy-ce-Ohj" id="6fx-LJ-hfa"/>
+                        <segue destination="6k9-f8-8fI" kind="show" id="JGl-J7-zig"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MGF-Iq-E3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="-1306"/>
+        </scene>
+        <!--Church-->
+        <scene sceneID="BUK-81-ugj">
+            <objects>
+                <viewController storyboardIdentifier="ChurchViewController" title="Church" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yMF-rJ-ibC" customClass="ChurchViewController" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dpE-lR-rM3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jt3-2h-hlk">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ChurchTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChurchCell" rowHeight="100" id="oy8-OC-8e0" customClass="ChurchTableViewCell" customModule="ChurchApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oy8-OC-8e0" id="x1S-mR-P6I">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVr-ml-7Mg">
+                                                    <rect key="frame" x="15" y="21" width="345" height="58"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eVr-ml-7Mg" firstAttribute="top" secondItem="x1S-mR-P6I" secondAttribute="topMargin" constant="10" id="Aq8-CF-FRs"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eVr-ml-7Mg" secondAttribute="trailing" id="OzU-Bx-adu"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="eVr-ml-7Mg" secondAttribute="bottom" constant="10" id="TXe-hk-3Pi"/>
+                                                <constraint firstItem="eVr-ml-7Mg" firstAttribute="leading" secondItem="x1S-mR-P6I" secondAttribute="leadingMargin" id="roH-xy-sSh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainLabel" destination="eVr-ml-7Mg" id="K9s-pD-Xca"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jt3-2h-hlk" firstAttribute="top" secondItem="YbL-56-N2a" secondAttribute="top" id="1l4-uS-eho"/>
+                            <constraint firstItem="Jt3-2h-hlk" firstAttribute="leading" secondItem="YbL-56-N2a" secondAttribute="leading" id="7qo-CO-Aiw"/>
+                            <constraint firstItem="YbL-56-N2a" firstAttribute="trailing" secondItem="Jt3-2h-hlk" secondAttribute="trailing" id="PmZ-Tw-2RB"/>
+                            <constraint firstItem="YbL-56-N2a" firstAttribute="bottom" secondItem="Jt3-2h-hlk" secondAttribute="bottom" id="mku-eQ-llg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YbL-56-N2a"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Church" id="tkH-oc-pzT"/>
+                    <connections>
+                        <outlet property="tableView" destination="Jt3-2h-hlk" id="B2i-Fd-9eE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhO-PA-vPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="-574.36281859070471"/>
+        </scene>
+        <!--Sermons-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SermonsViewController" title="Sermons" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SermonsViewController" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TB5-dt-hv4">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="OAh-jg-FOw" detailTextLabel="Qaa-MM-4KD" rowHeight="91" style="IBUITableViewCellStyleSubtitle" id="rbJ-C0-uvj">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="91"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rbJ-C0-uvj" id="qEv-Q1-id5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OAh-jg-FOw">
+                                                    <rect key="frame" x="15" y="25" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qaa-MM-4KD">
+                                                    <rect key="frame" x="15" y="48.5" width="33" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dko-fg-lle">
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rK0-q0-qNs"/>
+                                    <barButtonItem systemItem="play" id="gsf-nk-MWd">
+                                        <connections>
+                                            <action selector="playButtonTapped:" destination="BYZ-38-t0r" id="mNR-7P-K8q"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ZsW-VK-ejW"/>
+                                    <barButtonItem systemItem="pause" id="DXR-VG-r61">
+                                        <connections>
+                                            <action selector="pauseButtonTapped:" destination="BYZ-38-t0r" id="3R9-oC-FV7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YQW-Yy-twM"/>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rGU-JA-bj6">
+                                <rect key="frame" x="169.5" y="315" width="37" height="37"/>
+                                <color key="color" red="0.61133448259021406" green="0.60835397413295733" blue="0.61827807741116758" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TB5-dt-hv4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DL2-oT-sgU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TB5-dt-hv4" secondAttribute="trailing" id="EFg-M3-6dW"/>
+                            <constraint firstItem="rGU-JA-bj6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uhf-ox-Wo5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TB5-dt-hv4" secondAttribute="bottom" id="WRi-Uk-DGj"/>
+                            <constraint firstItem="Dko-fg-lle" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZjT-YL-VM3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dko-fg-lle" secondAttribute="bottom" id="cM7-N9-7FE"/>
+                            <constraint firstItem="rGU-JA-bj6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fp2-7r-3a5"/>
+                            <constraint firstItem="Dko-fg-lle" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pIL-Wp-y61"/>
+                            <constraint firstItem="TB5-dt-hv4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zB0-8F-0rS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sermons" id="Roz-AX-WIv"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="rGU-JA-bj6" id="5Ya-cx-xHK"/>
+                        <outlet property="playButton" destination="gsf-nk-MWd" id="e8N-si-tgy"/>
+                        <outlet property="tableView" destination="TB5-dt-hv4" id="6K2-gK-c9H"/>
+                        <outlet property="toolBar" destination="Dko-fg-lle" id="m82-fz-3IO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="133.5832083958021"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="dBw-np-vUX">
+            <objects>
+                <viewController storyboardIdentifier="EventsViewController" title="Events" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Gz-le-ul3" customClass="EventsViewController" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="07P-su-9ry">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RML-Gh-kS1">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tf1-Zr-7IO">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="80"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DayCollectionViewCell" reuseIdentifier="DayCollectionViewCell" id="8e6-pj-J5U" customClass="DayCollectionViewCell" customModule="ChurchApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="80" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2av-Ah-bde">
+                                                    <rect key="frame" x="0.0" y="15" width="50" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLj-Tu-4kc">
+                                                    <rect key="frame" x="20" y="35" width="10" height="10"/>
+                                                    <color key="backgroundColor" red="0.088100425899028778" green="0.2726408839225769" blue="0.59321779012680054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="10" id="GvZ-bN-AHi"/>
+                                                        <constraint firstAttribute="width" constant="10" id="Lyg-gd-hAs"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="xLj-Tu-4kc" firstAttribute="centerX" secondItem="8e6-pj-J5U" secondAttribute="centerX" id="6cA-jf-Wxn"/>
+                                            <constraint firstAttribute="bottom" secondItem="xLj-Tu-4kc" secondAttribute="bottom" constant="5" id="GEA-fQ-dS0"/>
+                                            <constraint firstAttribute="trailing" secondItem="2av-Ah-bde" secondAttribute="trailing" id="Q3F-hb-zW7"/>
+                                            <constraint firstItem="2av-Ah-bde" firstAttribute="top" secondItem="8e6-pj-J5U" secondAttribute="top" constant="15" id="Yeb-ox-fgx"/>
+                                            <constraint firstItem="2av-Ah-bde" firstAttribute="leading" secondItem="8e6-pj-J5U" secondAttribute="leading" id="o05-B0-UVF"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="eventIndicator" destination="xLj-Tu-4kc" id="GRa-uh-tIU"/>
+                                            <outlet property="numberLabel" destination="2av-Ah-bde" id="MsA-bl-e5f"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HeaderCollectionReusableView" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeaderCollectionReusableView" id="EMn-AI-f6V" customClass="HeaderCollectionReusableView" customModule="ChurchApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="March" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfS-Q2-tSa">
+                                            <rect key="frame" x="159" y="28.5" width="58" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ZfS-Q2-tSa" firstAttribute="centerY" secondItem="EMn-AI-f6V" secondAttribute="centerY" id="Zow-HB-6tK"/>
+                                        <constraint firstItem="ZfS-Q2-tSa" firstAttribute="centerX" secondItem="EMn-AI-f6V" secondAttribute="centerX" id="ceB-gp-N3v"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="ZfS-Q2-tSa" id="QhH-lT-Bdj"/>
+                                    </connections>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RML-Gh-kS1" firstAttribute="leading" secondItem="mYb-Rt-PR0" secondAttribute="leading" id="FXp-l3-7IE"/>
+                            <constraint firstItem="mYb-Rt-PR0" firstAttribute="bottom" secondItem="RML-Gh-kS1" secondAttribute="bottom" id="FsV-EF-Wfu"/>
+                            <constraint firstItem="mYb-Rt-PR0" firstAttribute="trailing" secondItem="RML-Gh-kS1" secondAttribute="trailing" id="bbO-c6-pef"/>
+                            <constraint firstItem="RML-Gh-kS1" firstAttribute="top" secondItem="mYb-Rt-PR0" secondAttribute="top" id="oyE-Yx-Hh1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mYb-Rt-PR0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Events" id="UXP-9f-45O"/>
+                    <connections>
+                        <outlet property="collectionView" destination="RML-Gh-kS1" id="HPL-2c-tJg"/>
+                        <segue destination="QDe-qo-ft2" kind="show" id="edy-Lb-Lvu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9l-PS-GIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="903.59820089955031"/>
+        </scene>
+        <!--Day View Controller-->
+        <scene sceneID="wKw-t4-q0K">
+            <objects>
+                <viewController storyboardIdentifier="DayViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QDe-qo-ft2" customClass="DayViewController" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DLK-CC-Qr2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oiH-Nc-u8J">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" id="egR-F9-k3T">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="egR-F9-k3T" id="fdd-bK-b2W">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2zc-Mf-6wv" firstAttribute="trailing" secondItem="oiH-Nc-u8J" secondAttribute="trailing" id="d8D-G4-dyf"/>
+                            <constraint firstItem="2zc-Mf-6wv" firstAttribute="bottom" secondItem="oiH-Nc-u8J" secondAttribute="bottom" id="f0h-l1-mky"/>
+                            <constraint firstItem="oiH-Nc-u8J" firstAttribute="leading" secondItem="2zc-Mf-6wv" secondAttribute="leading" id="oCx-eu-xyF"/>
+                            <constraint firstItem="oiH-Nc-u8J" firstAttribute="top" secondItem="2zc-Mf-6wv" secondAttribute="top" id="ulO-V2-zQ0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2zc-Mf-6wv"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="oiH-Nc-u8J" id="JMR-6i-sGo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dH5-M5-2lH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2006" y="904"/>
+        </scene>
+        <!--Member Detail View Controller-->
+        <scene sceneID="WX9-cw-wVE">
+            <objects>
+                <viewController storyboardIdentifier="MemberDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6k9-f8-8fI" customClass="MemberDetailViewController" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jcK-Cs-JPh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4fq-r8-pWe">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ChurchTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChurchCell" rowHeight="100" id="19r-oh-FSA" customClass="ChurchTableViewCell" customModule="ChurchApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="19r-oh-FSA" id="8ds-2r-CX4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ0-iW-56U">
+                                                    <rect key="frame" x="15" y="21" width="345" height="58"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KZ0-iW-56U" firstAttribute="leading" secondItem="8ds-2r-CX4" secondAttribute="leadingMargin" id="UQ5-px-9fG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="KZ0-iW-56U" secondAttribute="bottom" constant="10" id="VUu-Z7-Zy1"/>
+                                                <constraint firstItem="KZ0-iW-56U" firstAttribute="top" secondItem="8ds-2r-CX4" secondAttribute="topMargin" constant="10" id="fJj-Ui-XaK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KZ0-iW-56U" secondAttribute="trailing" id="tT1-V0-Ciy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainLabel" destination="KZ0-iW-56U" id="95V-3k-J8H"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dzq-LS-zx6" firstAttribute="bottom" secondItem="4fq-r8-pWe" secondAttribute="bottom" id="5eq-xK-OQg"/>
+                            <constraint firstItem="4fq-r8-pWe" firstAttribute="trailing" secondItem="dzq-LS-zx6" secondAttribute="trailing" id="8td-GP-5V3"/>
+                            <constraint firstItem="4fq-r8-pWe" firstAttribute="top" secondItem="dzq-LS-zx6" secondAttribute="top" id="TNe-nN-TFi"/>
+                            <constraint firstItem="4fq-r8-pWe" firstAttribute="leading" secondItem="dzq-LS-zx6" secondAttribute="leading" id="dLw-Hr-5d8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dzq-LS-zx6"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="4fq-r8-pWe" id="7V9-Zb-5iP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13A-B7-mNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946" y="-1307"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lSu-c8-hir">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="i6u-kM-936" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="div-Wa-Xmz">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="I5R-p2-aRr" kind="relationship" relationship="viewControllers" id="BEJ-Gj-gju"/>
+                        <segue destination="Q8D-te-RFI" kind="relationship" relationship="viewControllers" id="6xf-KX-kY5"/>
+                        <segue destination="Ixf-KA-nTV" kind="relationship" relationship="viewControllers" id="oyl-Zp-Udc"/>
+                        <segue destination="VnD-g1-7iJ" kind="relationship" relationship="viewControllers" id="uTf-5e-030"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70a-R6-6bJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-425" y="134"/>
+        </scene>
+        <!--Sermons-->
+        <scene sceneID="1Pw-zx-u8P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VnD-g1-7iJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sermons" image="sermonsIcon" id="X6Y-eb-cjN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="a4y-9t-u3z">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="phJ-np-vHx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BsZ-Sh-Ga2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="134"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="oec-sl-kaM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ixf-KA-nTV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Events" image="calendarIcon" id="deF-i8-Yfu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BnW-nk-WhQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rsg-h9-JTa">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="3Gz-le-ul3" kind="relationship" relationship="rootViewController" id="cam-yG-TCE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFB-VF-rID" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="904"/>
+        </scene>
+        <!--Members-->
+        <scene sceneID="EXT-Hu-BA4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q8D-te-RFI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Members" image="membersIcon" id="GL3-gK-ATp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="vcz-Gl-a3y">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1bf-tw-zRT" kind="relationship" relationship="rootViewController" id="ekR-HH-6oD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5z-gZ-Vfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="-1307"/>
+        </scene>
+        <!--Church-->
+        <scene sceneID="nKI-e4-ur4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I5R-p2-aRr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Church" image="churchIcon" id="YHz-fn-LWm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="oRA-Cl-Plk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yMF-rJ-ibC" kind="relationship" relationship="rootViewController" id="3pD-ip-fPx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsF-HN-3Op" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="-574"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendarIcon" width="30" height="30"/>
+        <image name="churchIcon" width="30" height="30"/>
+        <image name="membersIcon" width="30" height="30"/>
+        <image name="sermonsIcon" width="30" height="30"/>
+    </resources>
+</document>
